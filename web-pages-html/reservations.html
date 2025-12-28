@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Researse a table</title>
+    <link rel="stylesheet" href="../web-pages-styles/common-styles.css">
+    <link rel="stylesheet" href="../web-pages-styles/reservations.css">
+    <link rel="stylesheet" href="../web-pages-styles/responsive-styles.css">
+</head>
+<body>
+    <!--Header-->
+    <header class="col-2-styled">
+        <a href="index.html"><img src="../assets/nav-logo.png" height="50px" width="150px" alt="little lemon logo"/></a>
+
+        <!-- Hamburger button -->
+        <button class="menu-toggle" aria-label="Open menu">
+            ☰
+        </button>
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Login</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <main>
+        <form class="colored-section">
+            <h1>Reservation</h1>
+            <div class="grid-4">
+                <div>
+                    <input type="radio" name="seating" id="radio-one" required>
+                    <label for="radio-one">Indoor seating</label>
+                </div>
+                <div>
+                    <input type="radio" name="seating" id="radio-two" required>
+                    <label for="radio-two">Outdoor seating</label>
+                </div>
+                <div>
+                    <label for="date">Date</label><br/>
+                    <input type="date" name="date" id="date" required>
+                </div>
+                <div>
+                    <label for="noDiners">Number of Diners</label>
+                    <select id="noDiners" required>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="occasion">Occasion</label>
+                    <select id="occasion" required>
+                        <option>Select Occasion</option>
+                        <option>Birthday</option>
+                        <option>Engagement</option>
+                        <option>Anniversary</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="time">Time</label><br/>
+                    <input type="time" name="time" id="time" required>
+                </div>           
+            </div>
+
+            <div class="button-section">
+                <button type="submit" id="reserve-button" class="button">Reserve a table</button>
+            </div>
+
+        </form>
+    </main>
+
+    <script src="../web-pages-scripts/reservations.js"></script>
+    <script src="../web-pages-scripts/menu.js"></script>
+</body>
+</html>

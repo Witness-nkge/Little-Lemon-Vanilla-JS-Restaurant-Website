@@ -1,0 +1,50 @@
+.colored-section {
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+.colored-section h1 {
+    padding-left:10%;
+    color: #f4ce14;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0% 10%;
+    gap: 50px;
+    color: white;
+    font-weight: 600;
+    row-gap: 20px;
+    font-size: 0.9rem;
+}
+
+input[type="date"], input[type="time"], select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.image-card {
+    margin: 20px 10%;
+
+}
+
+.image-card-item img {
+    border-radius: 10px;
+    object-fit: cover;
+}
+.button-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+input, select {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
