@@ -20,7 +20,7 @@ function submitForm() {
 
     if ((!radioOne.checked && !radioTwo.checked) || !date || !diners || !occasion || !time) {}
     else alert(`
-        You have successfully reserved a table
+        Reservation Comfirmed
         
         Type of Seating: ${radioValue}
         Date: ${date}
@@ -28,7 +28,7 @@ function submitForm() {
         Occasion: ${occasion}
         Time: ${time}
 
-        If any of the above information is incorrect 
-        please rebook the table with correct details
+        If any of the above information is incorrect, 
+        please rebook your table with the correct details.
     `)
 }
