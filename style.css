@@ -1,3 +1,5 @@
+/*style.css*/
+
 .col-2 {
     display: flex;
     max-height: 350px;
@@ -15,7 +17,8 @@
 .image img{
     border-radius: 10px;
     margin-top: 20px;
-    margin-left: 40%;
+    float: right;
+    margin-right: 50px;
 }
 .text img {
     border-radius: 10px;

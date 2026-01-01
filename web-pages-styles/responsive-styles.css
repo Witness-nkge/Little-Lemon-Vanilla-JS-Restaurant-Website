@@ -1,3 +1,6 @@
+/*responsive-styles.css*/
+
+
 @media (max-width: 768px) {
     .grid-3 {
         display: grid;
@@ -29,7 +32,16 @@
     nav.active {
         display: block;
     }
-}
+    .header-inner {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 10%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    }
 
 @media (max-width: 576px) {
     .grid-3 {
@@ -44,9 +56,12 @@
         display: block;
     }
 
+    .colored-section .text {
+        width: 80%;
+    }
 
     .text, .image {
-        width: 80%;
+        width: 100%;
     }
     .image img, .text img{
         display: none;

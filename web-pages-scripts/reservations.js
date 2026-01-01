@@ -10,7 +10,7 @@ function submitForm() {
     } else if (radioTwo.checked) {
         radioValue = "Outdoor Seating"
     } else {
-        radioValue = ""
+        return
     }
 
     const date = document.getElementById('date').value
@@ -18,11 +18,7 @@ function submitForm() {
     const occasion = document.getElementById('occasion').value
     const time = document.getElementById('time').value
 
-    if (!radioOne.checked && !radioTwo.checked ) {}
-    else if (!date) {}
-    else if (diners == "") {}
-    else if (occasion == "") {}
-    else if (!time) {}
+    if ((!radioOne.checked && !radioTwo.checked) || !date || !diners || !occasion || !time) {}
     else alert(`
         You have successfully reserved a table
         
@@ -34,5 +30,5 @@ function submitForm() {
 
         If any of the above information is incorrect 
         please rebook the table with correct details
-        `)
+    `)
 }
