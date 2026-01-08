@@ -1,0 +1,52 @@
+.col-2-about { 
+    display: flex;
+    max-height: 220px;
+    gap: 20px;
+    text-align: justify;
+    padding: 10px 0;
+} 
+.col-2-about h1 { 
+    line-height: 0px; 
+} 
+.about-text, .about-image { 
+    width: 50%;
+} 
+.about-image img { 
+    border-radius: 10px; 
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+} 
+.lemon-img {
+    object-fit: contain;
+}
+
+.chef-img {
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+    .col-2-about {
+        max-height: 300px;
+        gap: 10px;
+    }
+    .about-image {
+        height: 220px;
+    }
+}
+
+@media (max-width: 576px){
+    /*----------About Responsive Styles----------*/
+    .col-2-about {
+        display: block;
+        padding: 0;
+    }
+    .about-image {
+        display: none;
+    }
+    .about-text {
+        width: 100%;
+    }
+}
+
