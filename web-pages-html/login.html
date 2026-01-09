@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="../web-pages-styles/common-styles.css">
+    <link rel="stylesheet" href="../web-pages-styles/responsive-styles.css">
+    <link rel="stylesheet" href="../web-pages-styles/login.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="header-inner">
+            <a href="../index.html"><img src="../assets/nav-logo.png" height="50px" width="150px" alt="little lemon logo"/></a>
+
+            <button class="menu-toggle" aria-label="Open menu">
+                ☰
+            </button>
+
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a id="nav-login" href="">Login</a></li>
+                </ul> 
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="login-image">
+                <img src="../assets/nav-logo.png" alt="Little Lemon Restuarant Logo" width="150px" />
+            </div>
+
+            <div class="login-text">
+                <h2>Login into your account</h2>
+                <p>Don't have an account? <span>Sign up</span></p>
+            </div>
+            
+            <form>
+                <div class="form-input">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="littlelemon@gmail.com" required>
+                </div>
+                <div class="form-input">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="password" required>
+                </div>
+
+                <div class="center-row">
+                    <button type="submit" id="login-button" class="button">Log In</button>
+                </div>
+            </form>
+
+        </div>
+    </main>
+    <script src="../web-pages-scripts/menu.js"></script>
+    <script src="../web-pages-scripts/login.js"></script>
+</body>
+</html>
