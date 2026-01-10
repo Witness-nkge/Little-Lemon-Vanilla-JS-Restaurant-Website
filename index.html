@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="./web-pages-styles/common-styles.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./web-pages-styles/responsive-styles.css">
+    <link rel="stylesheet" href="./web-pages-styles/about.css">
 </head>
 <body>
     <!--Header-->
     <header>
         <div class="header-inner">
-            <a href="index.html" class="logo"><img src="assets/nav-logo.png" height="50px" width="150px" alt="little lemon logo"/></a>
+            <a href="index.html" class="logo"><img src="assets/nav-logo.png" height="50px" width="150px" alt="little lemon restuarant logo"/></a>
 
             <button class="menu-toggle" aria-label="Open menu">
                 ☰
@@ -21,11 +22,11 @@
             <nav id="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="./web-pages-html/about.html">About</a></li>
                     <li><a href="./web-pages-html/menu.html">Menu</a></li>
                     <li><a href="./web-pages-html/reservations.html">Reservations</a></li>
-                    <li><a href="#">Order</a></li>
-                    <li><a href="#">Login</a></li>
+                    <li><a href="">Order</a></li>
+                    <li><a id="nav-login" href="./web-pages-html/login.html">Login</a></li>
                 </ul> 
             </nav>
         </div>
@@ -34,8 +35,8 @@
     <!--Main Page Content-->
     <main>
         <!--Banner section-->
-        <section class="col-2 colored-section">
-            <div class="text">
+        <section class="col-2-banner">
+            <div class="banner-text">
                 <h1>Little Lemon</h1>
                 <h3>Chicago</h3>
                 <p>
@@ -46,7 +47,7 @@
                 </p>
                 <a class="button" href="./web-pages-html/reservations.html">Researve a table</a>
             </div>
-            <div class="image">
+            <div class="banner-image">
                 <img src="assets/restaurantfood.jpg" height="100%" alt="chef serving restuarant food"/>
             </div>
         </section>
@@ -61,16 +62,16 @@
         </section>    
 
         <!--Testimonies Section-->
-        <section class="colored-section testimonials-section">
+        <section class="testimonials-section">
             <h1>Testimonials</h1>
-            <div id="testimonials" class="grid-3 grid-1"></div>
+            <div id="testimonials" class="grid-3"></div>
         </section>
     </main>
 
     <!--About Section-->
     <div id="about" class="padded-section">
-        <div class="col-2">
-            <div class="text">
+        <div class="col-2-about">
+            <div class="about-text">
                 <h1>Little Lemon</h1>
                 <h3>Chicago</h3>
                 <p>
@@ -84,15 +85,15 @@
                     the day.
                 </p>
             </div>
-            <div class="image">
-                <img src="assets/lemon.png" height="67%" width="30%" alt="little lemon logo"/>
+            <div class="about-image">
+                <img class="lemon-img" src="assets/lemon.png" alt="little lemon logo"/>
             </div>
         </div>
-        <div class="col-2">
-            <div class="text">
-                <img src="assets/mario.jpg" height="80%" width="100%" alt="chef in the kitchen"/>
+        <div class="col-2-about">
+            <div class="about-image">
+                <img src="assets/mario.jpg" alt="chef in the kitchen"/>
             </div>
-            <div class="image">
+            <div class="about-text">
                 <p>
                     Little Lemon is owned by two Italian
                     brothers, Mario and Adrian, who moved
@@ -120,28 +121,27 @@
         <div>
             <h3>Navigation</h3>
             <a href="index.html">Home</a><br/>
-            <a href="#about">About</a><br/>
-            <a href="./web-pages/menu.html">Menu</a><br/>
-            <a href="">Reservatoins</a><br/>
-            <a href="">Order</a><br/>
-            <a href="">Login</a>
+            <a href="./web-pages-html/about.html">About</a><br/>
+            <a href="./web-pages-html/menu.html">Menu</a><br/>
+            <a href="./web-pages-html/reservations.html">Reservatoins</a><br/>
+            <a href="./web-pages-html/order.html">Order</a><br/>
+            <a href="./web-pages-html/login.html">Login</a>
         </div>
         <div>
             <h3>Contact</h3>
-            <p>2395 Maldove Way,</p>
-            <p>Chicago Illinois</p>
-            <p>(625)-243-6827</p>
-            <p>info@littlelemon.com</p>
+            <p>🏠 2395 Maldove Way, Chicago Illinois</p>
+            <p>📞 (625)-243-6827</p>
+            <p>✉️ info@littlelemon.com</p>
         </div>
         <div>
             <h3>Connect</h3>
-            <a href="">Facebook</a> <br/>
-            <a href="">instagram</a>
+            <a href="">🔗 Facebook</a> <br/>
+            <a href="">🔗 instagram</a>
         </div>
     </footer>
     
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
     <script src="./web-pages-scripts/menu.js"></script>
 </body>
 </html>
