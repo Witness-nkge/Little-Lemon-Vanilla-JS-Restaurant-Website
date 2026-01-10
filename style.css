@@ -1,30 +1,43 @@
 /*style.css*/
 
-.col-2 {
+
+/*----------Banner Styles----------*/
+.col-2-banner {
     display: flex;
     max-height: 350px;
-    gap: 20px;
+    gap: 10px;
+    background-color: #495e57;  
     text-align: justify;
 }
-.col-2 h1 {
-    color:#f4ce14; 
+.col-2-banner h1 {
     line-height: 0px;
 }
 
-.image, .text{
+.banner-image, .banner-text{
     width: 50%;
 }
-.image img{
+.banner-image img{
     border-radius: 10px;
     margin-top: 20px;
     float: right;
     margin-right: 50px;
 }
-.text img {
-    border-radius: 10px;
-}
-.text .button {
+.banner-text .button {
     margin-top: 30px;
+}
+.banner-text {
+    padding: 50px 0px 50px 50px;
+    color: white;
+}
+
+/*----------Menu Styles----------*/
+.col-2-menu {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+.col-2-menu h1 {
+    color: black;
 }
 .menu-card {
     margin: 20px 0px 0px 0px;
@@ -46,14 +59,21 @@
     color: black;
     margin-top: auto;
 }
+.menu-card-text-col-2 {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
 
+
+/*----------Testimonials Styles----------*/
 .testimonials-section {
     padding: 10px 50px 50px 50px;
+    background-color: #495e57;  
 }
 
 .testimonials-section h1{
     text-align: center; 
-    color: #f4ce14;
 }
 
 .testimony-card {
@@ -63,6 +83,8 @@
     border-radius: 10px;
 }
 
+
+/*----------Footer Styles----------*/
 footer {
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -79,3 +101,34 @@ footer img {
     padding-top: 20px;
 }
 
+
+/*----------Landing Page Responsive Styles----------*/
+@media (max-width: 576px) {
+    /*----------Banner Responsive Styles----------*/
+    .col-2-banner {
+        display: block;
+    }
+    .banner-text {
+        width: 77%;
+    }
+    .banner-image {
+        display: none;
+    }
+
+    /*----------Menu Responsive Styles---------*/
+    .col-2-menu {
+        display: block;
+    }
+
+    /*----------Footer Responsive Styles----------*/
+    footer {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 20px;
+        padding-bottom: 100px;
+        row-gap: 20px;
+    }
+    footer img {
+        display: none;
+    }
+}
