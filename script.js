@@ -51,6 +51,11 @@ menuData.forEach((item, index) => {
 })
 menu.innerHTML = menuInnerHTML
 
+//Auth State check
+if (sessionStorage.getItem('isLoggedIn') == 'true') {
+    document.getElementById('nav-login').href = "./web-pages-html/profile.html"
+}
+
 
 
 

@@ -2,9 +2,8 @@ let authMode = "login"
 const isValidEmail = (emailtest) => /\S+@\S+\.\S+/.test(emailtest);
 
 //Switch to register mode
-document.getElementById('signup').addEventListener('click', (e) => {
-    e.preventDefault()
-
+document.getElementById('signup').addEventListener('click', () => {
+    
     authMode = "register"
 
     document.getElementById('nameFields').innerHTML = `
@@ -100,9 +99,5 @@ document.querySelector('form').addEventListener('submit', (e) => {
 })
 
 
-//Auth State check
-if (sessionStorage.getItem('isLoggedIn') == 'true') {
-    document.querySelector('title').textContent = "Profile"
-    const main = document.querySelector('main')
-    main.innerHTML = ""
-}
+
+
