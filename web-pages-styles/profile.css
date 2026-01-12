@@ -1,17 +1,22 @@
+body {
+    line-height: 10px;
+}
+
 .profile {
     display: flex;
     height: 150px;
+    margin-bottom: 40px;
+    padding-top: 20px;
 }
 
 .profile-img {
-    width: 10%;
-    margin: 20px 20px 20px 0px;
+    width: 20%;
 }
 .profile-img img {
     object-fit: contain;
 }
 .profile-text {
-    width: 70%;
+    width: 80%;
 }
 
 .tabs {
@@ -38,5 +43,37 @@ p {
     font-size: 1rem;
 }
 
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 10%
+}
+
+.reservation-card {
+    padding: 1rem 1.2rem;
+    margin-bottom: 1rem;
+    border: 1px solid #495e57;
+    border-left: 6px solid #495e57;
+}
+
+
+@media (max-width: 576px) {
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: fit-content;
+    }
+    .profile-text{
+        width: 100%;
+    }
+
+    .profile-img {
+        width: 30%;
+        padding: 0;
+    }
+}
 
 
