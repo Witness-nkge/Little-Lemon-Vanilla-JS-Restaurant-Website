@@ -80,6 +80,7 @@ function handleLogin() {
     else if (foundUser) {
         alert("You have logged in succefully")
         sessionStorage.setItem('isLoggedIn', 'true')
+        sessionStorage.setItem('currentUserEmail', foundUser.email)
         window.location.href = "../index.html"
     }
     else {
