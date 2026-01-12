@@ -1,0 +1,40 @@
+.profile {
+    display: flex;
+    height: 220px;
+}
+
+.profile-img {
+    width: 30%;
+    margin: 20px 20px 20px 0px;
+}
+
+.profile-text {
+    width: 70%;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tabs div {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    background-color: #495e57;
+    color: white;
+    font-size: 1rem;
+}
+
+button {
+    padding: 5px 20px;
+    font-size: 0.9rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+
+
