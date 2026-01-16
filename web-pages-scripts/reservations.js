@@ -19,16 +19,32 @@ function submitForm() {
     const time = document.getElementById('time').value
 
     if ((!radioOne.checked && !radioTwo.checked) || !date || !diners || !occasion || !time) {}
-    else alert(`
-        Reservation Comfirmed
-        
-        Type of Seating: ${radioValue}
-        Date: ${date}
-        Number of Diners: ${diners}
-        Occasion: ${occasion}
-        Time: ${time}
+    else { 
+        alert(`
+            Reservation Comfirmed
+            
+            Type of Seating: ${radioValue}
+            Date: ${date}
+            Number of Diners: ${diners}
+            Occasion: ${occasion}
+            Time: ${time}
 
-        If any of the above information is incorrect, 
-        please rebook your table with the correct details.
-    `)
+            If any of the above information is incorrect, 
+            please rebook your table with the correct details.
+        `)
+
+        const reservation = JSON.parse(sessionStorage.getItem('reservation')) || []
+        reservation.push({
+            radioValue,
+            date,
+            diners,
+            occasion,
+            time
+        })
+
+        sessionStorage.setItem('reservation', JSON.stringify(reservation))
+    }
 }
+
+
+
