@@ -1,11 +1,15 @@
 /*common-styles.css*/
 
+
+/*----------Body Styles-----------*/
 body {
     max-width: 1000px;
     margin: 0 auto;
     font-family: monospace;
 }
 
+
+/*----------Header Styles----------*/
 header {
     position: fixed;
     top: 0;
@@ -28,7 +32,7 @@ header::after {
 .header-inner {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 20%;
+    padding: 0 2rem;
     height: 100%;
     display: flex;
     align-items: center;
@@ -58,17 +62,8 @@ main {
     margin-top: 80px;
 }
 
-.colored-section {
-    background-color: #495e57;
-}
-
-.colored-section .text {
-    padding: 50px 0px 50px 50px;
-    color: white;
-}
-
 .padded-section {
-    padding: 80px 70px;
+    padding: 50px;
 }
 
 .button {
@@ -88,18 +83,6 @@ main {
     grid-template-columns: repeat(3,1fr); 
     gap: 10px;
 }
-
-.col-2-styled {
-    display: flex;
-    align-items: center; 
-    justify-content: space-between;
-}
-
-.col-2-menu {
-    display: flex;
-    align-items: center; 
-    justify-content: space-between;
-}
 .menu-toggle {
   display: none;
   font-size: 28px;
@@ -107,4 +90,6 @@ main {
   border: none;
   cursor: pointer;
 }
-
+h1 {
+    color:#f4ce14; 
+}

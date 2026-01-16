@@ -1,11 +1,12 @@
-.colored-section {
+/*----------Reservation form styles----------*/
+form {
     padding: 10px;
     padding-bottom: 40px;
+    background-color: #495e57; 
 }
 
-.colored-section h1 {
+form h1 {
     padding-left:10%;
-    color: #f4ce14;
 }
 
 .grid-4 {
@@ -24,15 +25,6 @@ input[type="date"], input[type="time"], select {
     box-sizing: border-box;
 }
 
-.image-card {
-    margin: 20px 10%;
-
-}
-
-.image-card-item img {
-    border-radius: 10px;
-    object-fit: cover;
-}
 .button-section {
     display: flex;
     justify-content: center;
@@ -44,7 +36,12 @@ input, select {
     border-radius: 5px;
     border: none;
     margin-top: 5px;
-    font-size: 0.9rem;
-    font-weight: 600;
 }
 
+/*----------Grid Responsive Styles----------*/
+@media (max-width: 576px) {
+    .grid-4 {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}

@@ -1,15 +1,13 @@
-/*responsive-styles.css*/
-
-
+/*Common Styles Responsive Styles*/
 @media (max-width: 768px) {
+    /*----------Menu and Testimonials Grid Responsive Styles----------*/ 
     .grid-3 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
-    .image img {
-        margin-left: 20%;
-    }
+
+    /*----------Header Responsive Styles----------*/
     nav {
         display: none;
         position: absolute;
@@ -18,67 +16,26 @@
         background: #fff;
         width: 100%;
     }
-
     nav ul {
         flex-direction: column;
         padding: 1rem;
     }
-
     .menu-toggle {
         display: block;
     }
-
-    /* Show nav when active */
     nav.active {
         display: block;
     }
-    .header-inner {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 0 10%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    }
+}
 
 @media (max-width: 576px) {
+    .padded-section {
+        padding: 30px 50px;
+    }
+    /*----------Menu and Testimonials Grid Responsive Styles----------*/ 
     .grid-3 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
-    }
-    .col-2 {
-        display: block;
-    }
-    .col-2-menu {
-        display: block;
-    }
-
-    .colored-section .text {
-        width: 80%;
-    }
-
-    .text, .image {
-        width: 100%;
-    }
-    .image img, .text img{
-        display: none;
-    }
-
-    .grid-4 {
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-    }
-
-    footer {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        padding: 20px;
-    }
-
-    footer img {
-        padding: 20px 0px 0px 0px;
     }
 }
