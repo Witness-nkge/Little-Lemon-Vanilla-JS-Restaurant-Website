@@ -37,14 +37,10 @@ menuData.forEach((item, index) => {
     <div class="menu-card">
         <img src="${item.image}" alt="${item.name}" />
         <div class="menu-card-text">
-            <div class="menu-card-text-col-2">
-                <h3>${item.name}</h3>
-                <h3 style="color: #FF7700">${item.price}</h3>
-            </div>
+            <h2>${item.name}</h2>
             <p>${item.description}</p>
-            <a href="./web-pages-html/order.html?item=${index}">
-                <h3>Order for Delivery</h3>
-            </a>
+            <h3>${item.price}</h3>
+            <button class="button">Add to Card</button>
         </div>
     </div>
     `
