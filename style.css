@@ -41,9 +41,11 @@
 }
 .menu-card {
     margin: 20px 0px 0px 0px;
-    background-color: #edefee;
+    background-color: white;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 20px rgba(0,0,0,0.08);
 }
 .menu-card img {
     width: 100%;
@@ -53,17 +55,15 @@
 }
 .menu-card-text {
     padding: 0px 20px 10px 20px;
-}
-.menu-card-text a {
-    text-decoration: none;
-    color: black;
-    margin-top: auto;
-}
-.menu-card-text-col-2 {
     display: flex;
-    align-items: center; 
-    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
 }
+
+.menu-card-text p {
+    flex: 1;
+}
+
 
 
 /*----------Testimonials Styles----------*/
@@ -77,7 +77,7 @@
 }
 
 .testimony-card {
-    background-color: #edefee;
+    background-color: white;
     padding: 10px;
     margin: 10px 0px 0px 0px;
     border-radius: 10px;
