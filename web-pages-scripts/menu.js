@@ -21,6 +21,7 @@ document.querySelectorAll("#main-nav a").forEach(link => {
 //Auth State
 const isLoggedIn = sessionStorage.getItem('isLoggedIn')
 if (isLoggedIn == "true") {
-    document.getElementById('nav-login').textContent = "Profile"
-    document.getElementById('nav-login').href = "../web-pages-html/profile.html"
+    const navLogin = document.getElementById('nav-login')
+    navLogin.textContent = "Profile"
+    navLogin.href = "../web-pages-html/profile.html"
 }
