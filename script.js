@@ -32,7 +32,7 @@ testimonials.innerHTML = testimonialsInnerHtml
 const menu = document.getElementById('menu')
 let menuInnerHTML = ""
 
-menuData.forEach((item, index) => {
+menuData.filter(item => item.special == true).forEach((item, index) => {
     menuInnerHTML += `
     <div class="menu-card">
         <img src="${item.image}" alt="${item.name}" />
