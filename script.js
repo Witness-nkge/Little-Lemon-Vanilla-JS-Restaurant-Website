@@ -40,7 +40,7 @@ menuData.forEach((item, index) => {
             <h2>${item.name}</h2>
             <p>${item.description}</p>
             <h3>${item.price}</h3>
-            <button class="button">Add to Card</button>
+            <button onClick="addToCard(${index})" class="button">Add to Card</button>
         </div>
     </div>
     `
