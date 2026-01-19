@@ -18,7 +18,7 @@ export const restuarantMenu = [
         special: true
     },
 
-    // 🍝 Main Meals
+    //Main Meals
     {
         category: "main",
         image: "assets/grilled-chicken.jpg",
@@ -64,3 +64,4 @@ export const restuarantMenu = [
         special: false
     }
 ];
+
