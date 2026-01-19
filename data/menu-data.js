@@ -1,5 +1,5 @@
 // Restaurant Menu Data
-export const restuarantMenu = [
+export const menuData = [
     // Starters
     {
         category: "starters",
