@@ -49,7 +49,7 @@ export const menuData = [
     // Drinks
     {
         category: "drinks",
-        image: "assets/lemonade.jpg",
+        image: "assets/lemonade.webp",
         name: "Fresh Lemonade",
         price: 4.99,
         description: "Freshly squeezed lemonade served chilled.",
@@ -57,7 +57,7 @@ export const menuData = [
     },
     {
         category: "drinks",
-        image: "assets/iced-tea.jpg",
+        image: "assets/iced-tea.webp",
         name: "Iced Tea",
         price: 3.99,
         description: "Cold brewed iced tea with a hint of lemon.",
