@@ -39,8 +39,8 @@ menuData.filter(item => item.special == true).forEach((item, index) => {
         <div class="menu-card-text">
             <h2>${item.name}</h2>
             <p>${item.description}</p>
-            <h3>${item.price}</h3>
-            <button onClick="addToCard(${index})" class="button">Add to Card</button>
+            <h3>$${item.price}</h3>
+            <button onClick="addToCart(${index})" class="button">Add to Card</button>
         </div>
     </div>
     `
