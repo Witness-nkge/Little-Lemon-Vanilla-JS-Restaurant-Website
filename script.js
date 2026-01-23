@@ -1,4 +1,5 @@
 import {menuData} from './data/menu-data.js'
+import {addToCart, countCart} from './utils/cart.js'
 
 //Testimonies
 const testimonialsData = [
@@ -37,20 +38,64 @@ menuData.filter(item => item.special == true).forEach((item, index) => {
     <div class="menu-card">
         <img src="${item.image}" alt="${item.name}" />
         <div class="menu-card-text">
-            <h2>${item.name}</h2>
+            <div class="menu-col-2">
+                <h2>${item.name}</h2>
+                <h3 class="item-price">$${item.price}</h3>
+            </div>
             <p>${item.description}</p>
-            <h3>$${item.price}</h3>
-            <button onClick="addToCart(${index})" class="button">Add to Card</button>
+            <div class="actions">
+                <div class="quantity">
+                    <button onclick="decreaseQty(this)">-</button>
+                    <span>1</span>
+                    <button onclick="increaseQty(this)">+</button>
+                </div>
+                <button class="button add-btn" data-index="${index}">
+                    Add to Cart
+                </button>   
+            </div>     
         </div>
     </div>
     `
 })
 menu.innerHTML = menuInnerHTML
 
+document.querySelectorAll('.add-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const index = Number(button.dataset.index);
+        const qty = parseInt(button.parentElement.querySelector('.quantity span').textContent);
+        addToCart(index, qty);
+        updateCartButton()
+    });
+});
+
+
+function updateCartButton() {
+    const cartBtn = document.querySelector('.floating-cart-btn');
+    if (cartBtn) {
+        cartBtn.textContent = `Cart (${countCart()})`;
+    }
+}
+
+
+window.increaseQty = (btn) => {
+    const span = btn.parentElement.querySelector('span');
+    const qty = parseInt(span.textContent);
+    span.textContent = qty + 1;
+}
+
+window.decreaseQty = (btn) => {
+    const span = btn.parentElement.querySelector('span');
+    let qty = parseInt(span.textContent)
+    span.textContent = qty > 1 ? qty - 1 : 1;
+}
+
+
 //Auth State check
 if (sessionStorage.getItem('isLoggedIn') == 'true') {
     document.getElementById('nav-login').href = "./web-pages-html/profile.html"
 }
+
+updateCartButton()
 
 
 
